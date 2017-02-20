@@ -25,19 +25,23 @@ void freioM2(){
     digitalWrite(IN4,HIGH);
   }
 //Movimentos robo completo
+//tested
 void frenteRobot(){
   frenteM1();
   frenteM2();
 }
+//tested
 void trazRobot(){
   trazM1();
   trazM2();
 }
 //motor1 frente motor2 traz direita
+//tested
 void direitaRobot(){
   frenteM1();
   trazM2();
   }
+  //tested
 void esquerdaRobot(){
   trazM1();
   frenteM2();
