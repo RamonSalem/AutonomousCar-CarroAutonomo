@@ -47,5 +47,10 @@ void esquerdaRobot(){
   frenteM2();
   }
 
+  void freiaRobot(){
+    freioM1();
+    freioM2();
+    }
+
 
     
