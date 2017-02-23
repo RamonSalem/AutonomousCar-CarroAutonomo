@@ -41,7 +41,9 @@ void loop(){
 //Testes motor
 //frenteM1(); //ok
 //freioM1(); //ok
+//trasM1();  //ok
 //frenteRobot(); //ok
+//trasRobot(); //ok
 //direitaRobot(); //ok
 //esquerdaRobot(); //ok
 
@@ -101,6 +103,7 @@ if(distancia <= 20){
     }
   else{
     Serial.print("Dar a re");
+    trasRobot();
     delay(300);
     }    
   }
