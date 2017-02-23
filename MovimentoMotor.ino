@@ -1,5 +1,5 @@
 //Movimentos Básicos Motor 1 M1
-void trazM1(){
+void trasM1(){
     digitalWrite(IN1,HIGH);
     digitalWrite(IN2,LOW);
   }
@@ -16,7 +16,7 @@ void frenteM2(){
     digitalWrite(IN3,HIGH);
     digitalWrite(IN4,LOW);
   }  
-void trazM2(){
+void trasM2(){
     digitalWrite(IN3,LOW);
     digitalWrite(IN4,HIGH);
   }  
@@ -31,19 +31,19 @@ void frenteRobot(){
   frenteM2();
 }
 //tested
-void trazRobot(){
-  trazM1();
-  trazM2();
+void trasRobot(){
+  trasM1();
+  trasM2();
 }
-//motor1 frente motor2 traz direita
+//motor1 frente motor2 tras direita
 //tested
 void direitaRobot(){
   frenteM1();
-  trazM2();
+  trasM2();
   }
   //tested
 void esquerdaRobot(){
-  trazM1();
+  trasM1();
   frenteM2();
   }
 

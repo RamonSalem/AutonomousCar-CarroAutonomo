@@ -41,9 +41,7 @@ void loop(){
 //Testes motor
 //frenteM1(); //ok
 //freioM1(); //ok
-//trazM1();  //ok
 //frenteRobot(); //ok
-//trazRobot(); //ok
 //direitaRobot(); //ok
 //esquerdaRobot(); //ok
 
@@ -78,7 +76,7 @@ if(distancia <= 20){
   Serial.print("Distance 180: ");
   Serial.println(distancia);
   
-  delay(5000);
+  delay(3000);
   
   moverServo0();
   delay(2000);
@@ -88,31 +86,26 @@ if(distancia <= 20){
   Serial.print("Distance 0: ");
   Serial.println(distancia);
   
-  delay(4000);
+  delay(3000);
   moverServoCentro();
 
   if(distancia180 > 20 && distancia180 > distancia0){
     Serial.print("Mover para direcao 180: ");
     esquerdaRobot();
-    delay(200);
+    delay(300);
     }
   else if(distancia0 > 20 && distancia0 > distancia180){
     Serial.print("Mover para direcao 0");
     direitaRobot();
-    delay(200);
+    delay(300);
     }
   else{
     Serial.print("Dar a re");
-    trazRobot();
-    delay(200);
+    delay(300);
     }    
   }
   else{
     frenteRobot();
     }
-    
-
-
-
  
 }
