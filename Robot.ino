@@ -66,49 +66,11 @@ atualizarDistancia();
 //direitaRobot();
 //delay(2000);
 
-if(distancia <= 20){
-  freiaRobot();
-  int distancia180 = 0;
-  int distancia0 = 0;
-  
-  moverServo180();
-  delay(2000);
-  atualizarDistancia();
-  distancia180 = distancia;
-  Serial.print("Distance 180: ");
-  Serial.println(distancia);
-  
-  delay(3000);
-  
-  moverServo0();
-  delay(2000);
-  
-  atualizarDistancia();
-  distancia0 = distancia;
-  Serial.print("Distance 0: ");
-  Serial.println(distancia);
-  
-  delay(3000);
-  moverServoCentro();
-
-  if(distancia180 > 20 && distancia180 > distancia0){
-    Serial.print("Mover para direcao 180: ");
-    esquerdaRobot();
-    delay(300);
-    }
-  else if(distancia0 > 20 && distancia0 > distancia180){
-    Serial.print("Mover para direcao 0");
-    direitaRobot();
-    delay(300);
-    }
-  else{
-    Serial.print("Dar a re");
-    trasRobot();
-    delay(300);
-    }    
+if(distancia <= 25){
+  verificar();    
   }
-  else{
-    frenteRobot();
+else{
+  frenteRobot();
     }
  
 }
