@@ -34,23 +34,26 @@ void frenteRobot(){
 void trasRobot(){
   trasM1();
   trasM2();
+  delay(500);
 }
 //motor1 frente motor2 tras direita
 //tested
 void direitaRobot(){
   frenteM1();
   trasM2();
-  }
+  delay(300);
+}
   //tested
 void esquerdaRobot(){
   trasM1();
-  frenteM2();
-  }
+  frenteM2();   
+  delay(300);
+}
 
-  void freiaRobot(){
-    freioM1();
-    freioM2();
-    }
+void freiaRobot(){
+  freioM1();
+  freioM2();
+}
 
 
     
